@@ -69,6 +69,8 @@ a:hover:after {
 .hero {
   height: 92vh;
   background: var(--main-bg-color);
+  position: relative;
+  overflow: hidden;
 }
 
 /* STARS */
@@ -78,15 +80,8 @@ a:hover:after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
-  transform: rotate(-45deg);
-}
-.stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120%;
+  height: 65%;
+
   transform: rotate(-45deg);
 }
 
