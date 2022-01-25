@@ -45,13 +45,16 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.nav-menu a {
   position: relative;
   color: var(--white-color);
   font-size: 16px;
   font-weight: 500;
 }
 
-a:after {
+.nav-menu a:after {
   content: "";
   position: absolute;
   background-color: var(--primary-color);
@@ -62,7 +65,7 @@ a:after {
   transition: 250ms;
 }
 
-a:hover:after {
+.nav-menu a:hover:after {
   width: 100%;
 }
 
@@ -168,4 +171,93 @@ a:hover:after {
   50% {
     opacity: 0.6;
   }
+}
+
+/* Intro */
+
+.container {
+  display: flex;
+
+  width: 40rem;
+  height: 30rem;
+  margin: 12rem auto;
+}
+
+.text-icon-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 45%;
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: 80px;
+  line-height: 80px;
+  text-align: right;
+  position: relative;
+  margin-top: 4rem;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  right: -15px;
+  height: 400px;
+  width: 2px;
+  background: var(--primary-color);
+}
+
+.icon-container {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.icon-container i {
+  color: var(--primary-color);
+  font-size: 28px;
+  padding: 0 0.5rem 0 1rem;
+  opacity: 0.6;
+}
+
+.text-container {
+  width: 55%;
+  margin-left: 1.8rem;
+}
+
+.front {
+  color: var(--primary-color);
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.info-text {
+  margin-top: 1rem;
+  color: var(--white-color);
+}
+
+.second-line {
+  margin-top: 2rem;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.btn {
+  padding: 0.2rem 1rem;
+  color: var(--white-color);
+  border-radius: 0.1rem;
+}
+
+.primary-btn {
+  border: 2px solid var(--primary-color);
+  margin-right: 1rem;
+}
+
+.secondary-btn {
+  border: 2px solid var(--secondary-color);
 }
