@@ -238,6 +238,13 @@ h1::before {
   color: var(--white-color);
 }
 
+.text-bk {
+  background: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-weight: 500;
+  padding: 0px 5px;
+}
+
 .second-line {
   margin-top: 2rem;
 }
@@ -251,6 +258,9 @@ h1::before {
   padding: 0.2rem 1rem;
   color: var(--white-color);
   border-radius: 0.1rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .primary-btn {
@@ -258,6 +268,46 @@ h1::before {
   margin-right: 1rem;
 }
 
+.primary-btn:before {
+  transition: 500ms all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--primary-color);
+}
+
+.primary-btn:hover:before {
+  transition: 500ms all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
 .secondary-btn {
   border: 2px solid var(--secondary-color);
+}
+
+.secondary-btn:before {
+  transition: 500ms all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--secondary-color);
+}
+
+.secondary-btn:hover:before {
+  transition: 500ms all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
