@@ -16,6 +16,15 @@ html {
   --white-color: #eaf3e9;
 }
 
+.wrapper {
+  flex: 1 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background-color: var(--main-bg-color);
   height: 8vh;
@@ -177,7 +186,6 @@ a {
 
 .container {
   display: flex;
-
   width: 40rem;
   height: 30rem;
   margin: 12rem auto;
@@ -186,7 +194,6 @@ a {
 .text-icon-container {
   display: flex;
   flex-direction: column;
-
   width: 45%;
 }
 
@@ -310,4 +317,122 @@ h1::before {
   right: 0;
   opacity: 1;
   z-index: -1;
+}
+
+/* Projects */
+
+.projects {
+  min-height: 100vh;
+  background: var(--secondary-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 48px;
+  color: var(--white-color);
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.project-container {
+  width: 1300px;
+  height: 1000px;
+  margin-top: 4rem;
+}
+
+.container-project {
+  display: flex;
+}
+
+.img-container {
+  background: red;
+  width: 700px;
+  height: 350px;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.project-info {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: var(--white-color);
+  font-size: 24px;
+}
+
+.skill-info {
+  margin-top: 2rem;
+}
+
+.skill {
+  color: var(--white-color);
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  margin-right: 1rem;
+}
+
+.project-info-text {
+  color: var(--white-color);
+  width: 25rem;
+  margin-top: 2rem;
+}
+
+.project-btn-container {
+  margin-top: 2rem;
+}
+
+/* Media quries */
+
+/* Intro */
+
+@media (max-width: 768px) {
+  h1::before {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    height: auto;
+  }
+  .icon-container {
+    text-align: center;
+  }
+
+  .icon-container i {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .text-icon-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+  }
 }
