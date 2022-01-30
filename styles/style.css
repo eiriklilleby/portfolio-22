@@ -405,7 +405,7 @@ h3 {
 }
 
 .skill-info {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 300px;
 }
 
@@ -421,7 +421,7 @@ h3 {
 .project-info-text {
   color: var(--grey-color);
   width: 25rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 14px;
 }
 
@@ -475,7 +475,6 @@ input:focus {
 
 .form-error {
   font-size: 12px;
-
   color: red;
   display: none;
   margin-top: 0.2rem;
