@@ -469,6 +469,10 @@ input {
   padding: 1rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 .form-error {
   font-size: 12px;
 
