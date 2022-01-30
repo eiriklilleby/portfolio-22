@@ -28,13 +28,16 @@
         <div class="nav-menu">
           <img id="logo" src="/img/logo.png" alt="" />
           <ul>
-            <li><a href="">Project</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="wrapper">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
       <section class="hero">
         <div class="stars">
           <div class="star"></div>
@@ -49,13 +52,13 @@
                 Lilleby
               </h1>
               <div class="icon-container">
-                <a href="">
+                <a href="https://www.facebook.com/eirik.lilleby">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/eirik-lilleby-898b581b4/">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="">
+                <a href="https://github.com/eiriklilleby">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -81,15 +84,15 @@
               </p>
             </div>
             <div class="btn-container">
-              <a class="btn primary-btn" href="">View projects</a>
-              <a class="btn secondary-btn" href="">View resume</a>
+              <a class="btn primary-btn" href="#projects">View projects</a>
+              <a class="btn secondary-btn" href="resume.html">View resume</a>
             </div>
           </div>
         </div>
       </section>
 
       <section class="projects">
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
 
         <div class="project-container">
           <div class="container-project">
@@ -186,7 +189,78 @@
         </div>
       </section>
 
-      <section class="contact"></section>
+      <section class="contact" id="contact">
+        <h2>Contact me</h2>
+
+        <div class="contact-container">
+          <form action="" class="formContainer">
+            <div>
+              <input
+                class="inputform"
+                placeholder="Full Name"
+                name="firstName"
+                id="firstName"
+              />
+
+              <div class="form-error" id="firstNameError">
+                Please enter your name (Should be more than 5 characters)
+              </div>
+            </div>
+
+            <div>
+              <input
+                class="inputform"
+                placeholder="Email"
+                name="email"
+                id="email"
+              />
+
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
+            </div>
+
+            <div class="msg-box">
+              <label class="contactlabel">
+                Message
+                <textarea name="message" id="message"> </textarea>
+              </label>
+              <div class="form-error" id="messageError">
+                Your message must be at least 5 characters
+              </div>
+            </div>
+
+            <div class="contact-btn-container">
+              <button
+                class="btn primary-btn formbtn"
+                type="submit"
+                value="send"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+
+          <div class="contact-info-container">
+            <h4>Let's talk?</h4>
+            <p class="contact-info-text">
+              I'm open to collaborating and working on project with people. I'd
+              love to work with you and hear your ideas.
+            </p>
+            <p class="email">Email: eirik.lilleby@gmail.com</p>
+            <div class="contact-infobtn-container">
+              <a href="resume.html" class="btn primary-btn">View resume</a>
+              <a
+                href="https://github.com/eiriklilleby"
+                class="btn secondary-btn"
+                >View github</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer><p>&copy; 2022 Eirik Lilleby</p></footer>
+    <script src="./script.js"></script>
   </body>
 </html>
